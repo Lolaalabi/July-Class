@@ -1,0 +1,37 @@
+form {
+    width: 500px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div {
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-indent: 10px;
+    border: none;
+}
+button{
+    height: 30px;
+    background-color: rgb(95, 207, 97);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+#remove-btn{
+    height: 30px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}

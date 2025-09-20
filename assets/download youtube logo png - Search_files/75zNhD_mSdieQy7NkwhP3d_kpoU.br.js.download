@@ -1,0 +1,1 @@
+var MountRefreshButtonJS;(function(){var t,n=document.querySelector("#b_refresh"),i=document.querySelector("#b_content");n&&((t=n.parentElement)===null||t===void 0?void 0:t.removeChild(n),i&&i.appendChild(n))})(MountRefreshButtonJS||(MountRefreshButtonJS={}))

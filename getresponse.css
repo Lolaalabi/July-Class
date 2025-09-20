@@ -1,0 +1,147 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+h1,
+ul{
+    margin: 0;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+}
+.left-box{
+    display: flex;
+    align-items: center;
+}
+.left-box h1{
+    font-size: 15px;
+}
+ul{
+    display: flex;
+    gap: 13px;
+}
+li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+li:hover{
+    color: #00a2ff;
+    cursor: pointer;
+}
+.right-box{
+    display: flex;
+    gap: 20px;
+}
+.right-box button:first-child{
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+.demo-btn{
+    color: #fc5b1a;
+    border: 2px solid #fc5b1a;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: bold;
+    background: none;
+}
+.demo-btn:hover{
+     background-color: #fc5b1a;
+     cursor: pointer;
+     color: white;
+}
+.right-box button:last-child{
+    color: white;
+    border: 2px solid #008cd9;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background: #00a2ff;
+}
+
+.right-box button:last-child:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #00a2ff;
+}
+.menu{
+    display: none;
+    color: black;
+    font-size: 24px;
+}
+/* .hero-section */
+
+.hero-section{
+height: 100vh;
+display: flex;
+justify-content: center;
+}
+.hero-content{
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.hero-content p:first-child{
+    color: #717171;
+    font-size: 15px;
+    font-weight: bold;
+}
+.post-h1{
+    font-size: 18px;
+}
+.hero-content h1{
+    font-size: 65px;
+}
+
+.hero-content button{
+    background: #fbe30c;
+    border: 2px solid #e0c90a;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 24px;
+    margin-top: 45px;
+}
+.hero-content button:hover{
+    background-color:#00a2ff;
+    cursor: pointer;
+    border: 2px solid #008cd9;
+    color: white;
+}
+.hero-content p:last-child{
+    font-size: 10px;
+    border-top: 10px;
+}
+
+@media (max-width:600px) {
+    .left-box ul{
+        display: none;
+    }
+    .demo-btn{
+        display: none;
+    }
+  .right-box button:first-child{
+        display: none;
+    }
+    .hero-content h1{
+        display: 33px;
+    }
+    .hero-section{
+        padding: 0px 20px;
+    }
+    .menu{
+        display: block;
+        color: black;
+    }
+}
+

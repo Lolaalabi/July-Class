@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css"/>
+</head>
+<body>
+    <h1 class="heading">User Profiles</h1>
+    <div id="userContainer"></div>
+
+    <script>
+            const userContainer = document.querySelector("#userContainer");
+            const fetchUser = () => {
+              fetch("https://dummyjson.com/users")
+             .then((res) => res.json())
+             .then((data) => {
+                users = data.users;
+
+                users.forEach((u) => {
+                const userEL = document.createElement("div");
+                userEL.classList.add("user");
+
+                 userEL.innerHTML = `<img src="${u.image}">
+                 <h3>${u.firstName} ${u.lastName}</h3>
+                 <p>${u.email}</p>
+                 <p>${u.address.city}</p>`
+
+
+
+                userContainer.appendChild(userEL);
+               
+               
+        
+                });
+
+
+                
+              
+             })
+            .catch((err) => console.error(err))
+            };
+
+             fetchUser();
+
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- https://dummyjson.com/users -->

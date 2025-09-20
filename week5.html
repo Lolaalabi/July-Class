@@ -1,0 +1,341 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+        // let num = 125564959;
+        // const convert = parseInt(num);
+        // console.log(typeof convert);
+    
+        // let dice = Math.floor(Math.random() * 6) + 1;
+        // console.log("You rolled " + dice);
+
+        //John Doe
+        // const hasPaid = false;
+        // const hasAttend = false;
+
+        // if (!hasPaid) {
+        //     alert("You can Enter");
+        // }
+
+        // const hasPaid = !true;
+        // console.log(hasPaid);
+
+        // console.log(parseInt("Hello123")); //Nan
+        // console.log(parseInt("123Hello"));
+        // console.log(!(10 < 20)); //false
+        // console.log(!(50<10));
+
+        // let name = ["Mike", "Paul", "John"]; //Array
+        // console.log(name);
+
+        // let num = [1, 2, 3, 4, 5, 6, 7,];
+        // let colors = ["Blue", "Green", "Red", "Yellow",];
+        // colors[0] = "Brown";
+        // console.log(colors);
+        // let number = [1, 2, 3, 4, ];
+
+
+//Adding and removing elements
+        // let num = [1, 2, 3, 4, 5, 6, 7];
+        // let favoriteFood = ["Pasta", "Noodles", "Rice", "Yam",];
+        // let colors = ["Blue", "Red", "Yellow"];
+        
+        // favoriteFood.unshift("Amala");  //adds one more from the front
+        // console.log(favoriteFood);
+
+        //shift- deletes from the front
+        //pop- removes from the end
+        //push: adds to the end
+
+        // console.log(favoriteFood[0]);
+        // console.log(favoriteFood[3]);
+
+    //  const arr = favoriteFood.splice(1,3);
+    //  console.log(arr);
+
+    //  console.log(favoriteFood.concat(colors)); //joins array together 
+    //  console.log(favoriteFood.indexOf("Pasta")); // to check index of a variable
+    //  console.log(favoriteFood.includes("Amala")); // to see if a variable is in an array
+
+    //  let num = [8, 3, 9, 1, 7, 5, 2];
+    //  let sorted = num.filter(n => n>2); //return and finds out numbers greater than two 
+    //                                     //  while.find finds the one that comes first
+    //                                     // .map uses all variables
+    //  console.log(sorted);
+
+
+
+    //  let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //  let doubled = num.map(n => n*2);
+    //  console.log(doubled);
+
+    //  let scores = [45, 67, 89, 34, 90, 76, 54];
+    //  let passingScores = scores.filter(n => n>60);
+    //  console.log(passingScores);
+    
+    //  scores = [45, 67, 89, 34, 90, 76, 54];
+    //  let totalScores = scores.reduce((sum, n) => sum + n, 0);
+    //  console.log(totalScores);
+
+    //  let fruits = ["apple", "banana", "mango", "orange", "pear"];
+    //  let firstThree = fruits.slice(0, 3);
+    //  console.log(firstThree);
+
+    //  fruits =  ["apple", "banana", "mango", "orange", "pear"];
+    //  fruits.splice(2, 1, "grapes");
+    //  console.log(fruits);
+
+    //  scores = [45, 67, 89, 34, 90, 76, 54];
+    //  let topScore = scores.find(n => n>80);
+    //  console.log(topScore);
+
+    // // fruits =  ["apple", "banana", "mango", "orange", "pear"];
+    // // fruits.forEach(fruits => console.log (fruit.toUppercase()));
+
+    // let names = ["John", "Jane", "Mark", "Mary"];
+    // let arr = names.includes("Mark");
+    // console.log(arr);
+
+    // let sorted = num.sort((a, b) => (a -b));
+    // console.log(sorted);
+
+    // let colors1 = ["red", "blue"];
+    // let colors2 = ["green", "yellow"];
+    // let combined = colors1.concat(colors2);
+    // console.log(combined);
+
+
+//     const person = {
+//         name: ["mike", "jonh"],
+//         age: 20,
+//         class: "Fullstack",
+//     };
+     
+//    delete person.age;
+//     console.log(person);
+
+    
+//JSON: keys are  in strings ""
+        // its lightweight 
+
+//  const car = {
+//         "name": "camry",
+//         "model": "toyota"
+//     };
+
+//     console.log(car);
+
+// JSON.parse(car)    // to convert json to object
+// JSON.stringify(car) // to convert object to json
+
+// let person = new Map([
+//     ["name", "mike"],
+//     ["class", "frontend"]
+// ]);
+
+// person.set("age", "20",)
+// console.log(person.get("class"));
+
+//Functions that take parameters
+// function greet(name) {
+//     console.log("Hello" + name) ;
+// }
+// greet(" Mike");
+
+// //Functions with its own parameters
+// function add(a, b) {
+//     return a + b;
+// }
+
+// console.log(add(3, 2));
+
+// //Arrow function. Uses const
+
+// const add = () => {
+
+// }
+// const add = (a, b) => a +b;
+// console.log(add(3, 2));
+
+// setTimeout(function () {
+//     console.log("Executed after 2 seconds");
+// }, 5000);
+
+// function sayHello(name) {
+//     console.log("Hello," + name);
+// }
+
+// sayHello(" World");
+
+// function greet(name) {
+//     console.log("Hello," + name);
+// }
+
+// greet(" Mike");
+
+// function square(x){
+//     return x * x
+// }
+// console.log(square(2));
+
+// const example = (n) => {
+//   for(i = 0; i <n; i++); {
+//        console.log(i)
+//   }
+ 
+// }
+// example(5);
+
+// function say(name) {
+//     console.log("Hello" + name);
+// }
+// say(" Lola");
+
+
+//FUNCTIONS
+// let days = "Friday" //Condition statement
+// if (days = "Friday"){
+//     console.log("go to mosque")
+// } else{
+//     console.log("stay at home")
+// }
+
+// // let age = 17
+// // if (age >= 18){
+// //    alert("adult")
+// // } else{
+// //     alert("minor")
+// // }
+
+// let num = 2
+// if (num % 2 == 0){
+//     console.log(num + " is even number")
+// } else{
+//     console.log(num + " is odd number")
+// }
+
+// let user = true
+// if (user) {
+//     console.log("Login successful")
+// } else{
+//     console.log("user not found")
+// }
+
+// let password = 1254
+// if (password == 1234){
+//     console.log("Login successful")
+// } else {
+//     console.log("user not found")
+// }
+
+// let batteryPercentage = 90;
+
+// if (batteryPercentage >= 80) {
+//     console.log("Green")
+// } else if (batteryPercentage >= 20) {
+//     console.log ("Yellow")
+// } else {
+//     console.log("Red")
+// }
+
+// let score = 40;
+// if( score >=70) {
+//     console.log("A")
+// } else if ( score >=60) {
+//     console.log("B")
+// } else if (score >=50) {
+//     console.log("C")
+// } else if (score >=45) {
+//     console.log("D")
+// } else {
+//     console.log("Fail")
+// }
+
+// //Switch Statement
+// let day = "Wednesday";
+// switch (day) {
+//     case "Monday":
+//       console.log("Start of week");
+//     break;
+//     case "Friday":
+//         console.log("Weekend is near")
+//         break;
+//     case "Wednesday":
+//         console.log("Middle of week")
+//     break;
+//     default:
+//         console.log("Just another day")
+// }
+
+// let light = "Red";
+// switch (light) {
+//     case "Green":
+//       console.log("Go");
+//     break;
+
+//     case "Yellow":
+//       console.log("Get ready");
+//     break;
+
+//     case "Red":
+//         console.log("Stop");
+//     break;
+
+//     default:
+//         console.log("Traffic light not working");
+// }
+// //Ternary Operator
+// let age = 18
+// console.log(age == 18 ? "Adult" : "Minor");
+
+
+// function isEvenNumber(num){
+//     return num % 2 == 0;
+// }
+// console.log(isEvenNumber(10));
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("LolaAlabi", i);
+// }
+
+//REGEX
+
+const pattern = /hello/;
+console.log(pattern.test("hello world")); //true
+
+const phonePattern = /\d/;
+console.log(phonePattern.test("123-5645-0198")); //true
+
+
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+console.log(emailPattern.test("testT12-mike@example.com")); // true 
+
+
+if (emailPattern) {
+   alert("valid email");
+} else {
+    alert("invalid email");
+}
+
+// Mastering JavaScript DOM and Manipulation
+
+
+
+
+
+    </script>
+
+
+    
+
+
+</body>
+</html> -->
